@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#002147">
-<meta name="description" content="Human LAIer reveals the evolving relationships, sentiment and behavior underlying organizational performance. Move beyond occasional surveys with organizational intelligence.">
+<meta name="description" content="Human LAIer helps leaders detect changing patterns of collaboration, understand organizational risks and evaluate responses during major transformations.">
 <title>Human LAIer | Organizational Intelligence</title>
+<link rel="canonical" href="https://humanlaier.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Human LAIer | Organizational Intelligence">
+<meta property="og:description" content="The human system changes before the numbers do.">
+<meta property="og:url" content="https://humanlaier.com/">
+<meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="assets/brand/human-laier-square.svg">
 <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/styles.css">
-<script defer src="js/synthetic-data.js"></script><script defer src="js/metrics.js"></script><script defer src="js/network.js"></script><script defer src="js/main.js"></script><script defer src="js/surveys.js"></script><script defer src="js/contact.js"></script>
-  <meta name="robots" content="noindex, nofollow">
+<script defer src="js/synthetic-data.js"></script><script defer src="js/metrics.js"></script><script defer src="js/network.js"></script><script defer src="js/main.js"></script><script defer src="js/surveys.js"></script>  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -149,7 +154,13 @@
       <div class="contact-card-kicker">GET IN TOUCH</div>
       <h3>Tell us what you're working on.</h3>
       <p class="contact-form-intro">A few details will help us route your inquiry and make the first conversation useful.</p>
-      <form id="sales-inquiry" class="sales-inquiry" action="mailto:sales@humanlaier.com?subject=Human%20LAIer%20inquiry" method="post" enctype="text/plain">
+      <form id="sales-inquiry" class="sales-inquiry" action="https://formsubmit.co/sales@humanlaier.com" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Human LAIer — New website inquiry">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://humanlaier.com/thanks.html">
+        <input type="hidden" name="_url" value="https://humanlaier.com/#contact">
+        <input type="hidden" name="_captcha" value="true">
+        <div class="contact-honeypot" hidden aria-hidden="true"><label for="inquiry-website">Website</label><input id="inquiry-website" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
         <div class="contact-fields-two">
           <div class="contact-field"><label for="inquiry-name">Your name <span aria-hidden="true">*</span></label><input id="inquiry-name" name="name" type="text" autocomplete="name" required maxlength="120"></div>
           <div class="contact-field"><label for="inquiry-email">Work email <span aria-hidden="true">*</span></label><input id="inquiry-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254"></div>
@@ -159,15 +170,10 @@
           <div class="contact-field"><label for="inquiry-interest">What brings you here?</label><select id="inquiry-interest" name="interest"><option value="General inquiry">Select a topic</option><option>Request a demonstration</option><option>Organizational transformation</option><option>Merger or integration</option><option>Workforce intelligence</option><option>Privacy and governance</option><option>Partnership or research</option><option>Something else</option></select></div>
         </div>
         <div class="contact-field"><label for="inquiry-message">What would you like to discuss? <span aria-hidden="true">*</span></label><textarea id="inquiry-message" name="message" rows="4" required minlength="10" maxlength="1800" placeholder="A sentence or two about your organization and the decision you're exploring."></textarea></div>
-        <p class="contact-privacy-note">Please do not include individual employee records, confidential material, or sensitive personal information.</p>
-        <button type="submit" class="contact-submit">Prepare email to sales <span aria-hidden="true">↗</span></button>
-        <p class="contact-send-note">This opens your email application with the details filled in. You review the message and press Send; this form does not transmit or store it automatically.</p>
-        <div class="contact-prepared" id="contact-prepared" hidden>
-          <p id="contact-feedback" class="contact-feedback" role="status" aria-live="polite"></p>
-          <label for="contact-prepared-message">If your email app did not open, copy the prepared message below:</label>
-          <textarea id="contact-prepared-message" rows="6" readonly></textarea>
-          <button class="contact-copy" id="contact-copy" type="button">Copy message</button>
-        </div>
+        <p class="contact-privacy-note">Please provide only business contact details and a non-confidential summary. Do not send employee records or sensitive information. This form is delivered through <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a>, an external form-processing service.</p>
+        <button type="submit" class="contact-submit">Send inquiry <span aria-hidden="true">↗</span></button>
+        <p class="contact-send-note">Submitting sends your inquiry to our sales mailbox through the form provider; no email application is required. Prefer direct email? Use <a href="mailto:sales@humanlaier.com?subject=Human%20LAIer%20inquiry">sales@humanlaier.com</a>.</p>
+
       </form>
     </div>
   </div>
