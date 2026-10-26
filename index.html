@@ -6,7 +6,7 @@
 <title>Human LAIer | Organizational Intelligence</title>
 <link rel="icon" type="image/svg+xml" href="assets/brand/human-laier-square.svg">
 <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/styles.css">
-<script defer src="js/synthetic-data.js"></script><script defer src="js/metrics.js"></script><script defer src="js/network.js"></script><script defer src="js/main.js"></script><script defer src="js/surveys.js"></script>
+<script defer src="js/synthetic-data.js"></script><script defer src="js/metrics.js"></script><script defer src="js/network.js"></script><script defer src="js/main.js"></script><script defer src="js/surveys.js"></script><script defer src="js/contact.js"></script>
   <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
@@ -136,7 +136,42 @@
 
 <section class="section about" id="about"><div class="wrap about-layout"><div class="about-note"><div class="section-index"><span>08 / ORIGINS</span></div><h2 class="display">An enduring question, <em>new means of inquiry.</em></h2></div><div class="about-copy"><p>Human LAIer began in conversations among three classmates at the University of Oxford about organizational change, human judgment and the possibilities of artificial intelligence. Our team combines that academic foundation with practical experience of leadership and institutional decision-making.</p><p>We are interested in a longstanding management problem: how leaders can understand their organizations well enough to make sound decisions about their future. Developments in computing now allow that question to be examined in greater depth and with far more timely evidence.</p></div></div></section>
 
-<section class="contact" id="contact"><div class="wrap contact-layout"><div><div class="eyebrow on-dark">START A CONVERSATION</div><h2>See your organization <em>more clearly.</em></h2><p>We work with organizations making consequential decisions about their people, structures and operations. We would welcome the opportunity to discuss yours.</p><a class="button button-light" href="mailto:Sales@HiddenLaier.com?subject=Human%20LAIer%20demonstration%20request">Request a demonstration <span aria-hidden="true">↗</span></a></div><div class="contact-logo"><img src="assets/brand/human-laier-dark.svg" width="960" height="660" alt=""></div></div></section>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="wrap contact-layout">
+    <div class="contact-intro">
+      <div class="eyebrow on-dark">START A CONVERSATION</div>
+      <h2 id="contact-heading">See your organization <em>more clearly.</em></h2>
+      <p>We work with organizations making consequential decisions about their people, structures and operations. We would welcome the opportunity to discuss yours.</p>
+      <p class="contact-direct">Prefer to write directly? <a href="mailto:sales@humanlaier.com?subject=Human%20LAIer%20inquiry">sales@humanlaier.com</a></p>
+      <div class="contact-intro-mark" aria-hidden="true"><img src="assets/brand/human-laier-dark.svg" width="960" height="660" alt=""></div>
+    </div>
+    <div class="contact-form-card">
+      <div class="contact-card-kicker">GET IN TOUCH</div>
+      <h3>Tell us what you're working on.</h3>
+      <p class="contact-form-intro">A few details will help us route your inquiry and make the first conversation useful.</p>
+      <form id="sales-inquiry" class="sales-inquiry" action="mailto:sales@humanlaier.com?subject=Human%20LAIer%20inquiry" method="post" enctype="text/plain">
+        <div class="contact-fields-two">
+          <div class="contact-field"><label for="inquiry-name">Your name <span aria-hidden="true">*</span></label><input id="inquiry-name" name="name" type="text" autocomplete="name" required maxlength="120"></div>
+          <div class="contact-field"><label for="inquiry-email">Work email <span aria-hidden="true">*</span></label><input id="inquiry-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254"></div>
+          <div class="contact-field"><label for="inquiry-org">Organization <span aria-hidden="true">*</span></label><input id="inquiry-org" name="organization" type="text" autocomplete="organization" required maxlength="160"></div>
+          <div class="contact-field"><label for="inquiry-role">Your role <span class="contact-optional">(optional)</span></label><input id="inquiry-role" name="role" type="text" autocomplete="organization-title" maxlength="120"></div>
+          <div class="contact-field"><label for="inquiry-size">Workforce size</label><select id="inquiry-size" name="workforce"><option value="Not specified">Select a range</option><option>Under 200</option><option>200–999</option><option>1,000–4,999</option><option>5,000–19,999</option><option>20,000 or more</option></select></div>
+          <div class="contact-field"><label for="inquiry-interest">What brings you here?</label><select id="inquiry-interest" name="interest"><option value="General inquiry">Select a topic</option><option>Request a demonstration</option><option>Organizational transformation</option><option>Merger or integration</option><option>Workforce intelligence</option><option>Privacy and governance</option><option>Partnership or research</option><option>Something else</option></select></div>
+        </div>
+        <div class="contact-field"><label for="inquiry-message">What would you like to discuss? <span aria-hidden="true">*</span></label><textarea id="inquiry-message" name="message" rows="4" required minlength="10" maxlength="1800" placeholder="A sentence or two about your organization and the decision you're exploring."></textarea></div>
+        <p class="contact-privacy-note">Please do not include individual employee records, confidential material, or sensitive personal information.</p>
+        <button type="submit" class="contact-submit">Prepare email to sales <span aria-hidden="true">↗</span></button>
+        <p class="contact-send-note">This opens your email application with the details filled in. You review the message and press Send; this form does not transmit or store it automatically.</p>
+        <div class="contact-prepared" id="contact-prepared" hidden>
+          <p id="contact-feedback" class="contact-feedback" role="status" aria-live="polite"></p>
+          <label for="contact-prepared-message">If your email app did not open, copy the prepared message below:</label>
+          <textarea id="contact-prepared-message" rows="6" readonly></textarea>
+          <button class="contact-copy" id="contact-copy" type="button">Copy message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="footer"><div class="wrap footer-layout"><div><a href="#top" class="footer-logo" aria-label="Human LAIer home"><img src="assets/brand/human-laier-light.svg" width="960" height="660" alt="Human LAIer"></a><p>Organizational intelligence and simulation.</p></div><nav aria-label="Footer navigation"><a href="#surveys">The case</a><a href="#platform">The platform</a><a href="#applications">Applications</a><a href="#principles">Governance</a><a href="#contact">Contact</a></nav><div class="footer-small"><p>Human LAIer is the public-facing brand of Hidden LAIer.</p><p>© <span id="year">2026</span> Human LAIer</p></div></div></footer>
 </body></html>
