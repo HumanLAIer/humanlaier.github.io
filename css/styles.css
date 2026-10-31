@@ -116,3 +116,7 @@
  .measure-option strong{font-size:12px}
  .measure-option small{font-size:11px}
 }
+
+/* Mobile-only navigation CTA remains available after the hero scrolls away. */
+.masthead nav .nav-mobile-contact{display:none}
+@media(max-width:760px){.masthead nav.is-open .nav-mobile-contact{display:flex;align-items:center;min-height:44px;padding:11px 16px;background:var(--oxford);color:#fff;font-weight:700;white-space:normal}}
