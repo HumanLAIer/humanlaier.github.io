@@ -1,8 +1,20 @@
 (function(){'use strict';const D=window.HLData,M=window.HLMetrics,NS='http://www.w3.org/2000/svg';
  document.getElementById('year').textContent=String(new Date().getFullYear());
  const menu=document.getElementById('menu-button'),nav=document.getElementById('main-nav');
- menu.addEventListener('click',()=>{const open=!nav.classList.contains('is-open');nav.classList.toggle('is-open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu')});
- nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('is-open');menu.setAttribute('aria-expanded','false')}));
+ const main=document.getElementById('content');
+ document.querySelector('.skip')?.addEventListener('click',()=>main?.focus({preventScroll:true}));
+ function setMenu(open){nav.classList.toggle('is-open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu')}
+ menu.addEventListener('click',()=>setMenu(!nav.classList.contains('is-open')));
+ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  const wasExpanded=nav.classList.contains('is-open');setMenu(false);
+  // A link that closes the mobile menu must move keyboard focus to its destination,
+  // not leave assistive-technology users at the hidden link or document body.
+  if(wasExpanded){const hash=a.getAttribute('href')||'';
+   if(hash.startsWith('#')){const target=document.getElementById(hash.slice(1));
+    if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
+   }
+  }
+ }));
  function el(parent,name,attrs={},text){const n=document.createElementNS(NS,name);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v)));if(text!=null)n.textContent=text;parent.appendChild(n);return n}
  function chart(){const choice=document.getElementById('story-select').value;
   const map={'operations-tech':['Operations','Technology'],'leadership-planning':['Leadership & Strategy','Planning & Resources'],'people-external':['People & Administration','External Coordination']};
