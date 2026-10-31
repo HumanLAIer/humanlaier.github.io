@@ -4,26 +4,10 @@
   "cases": [
     {
       "view": "Homepage on desktop",
-      "testedRules": 33,
+      "testedRules": 32,
       "passedRules": 31,
-      "needsManualReview": 2,
+      "needsManualReview": 1,
       "incompleteRules": [
-        {
-          "rule": "aria-prohibited-attr",
-          "help": "Elements must only use permitted ARIA attributes",
-          "impact": "serious",
-          "affectedElements": 2,
-          "examples": [
-            {
-              "selector": ".survey-evidence",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            },
-            {
-              "selector": ".survey-figure",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            }
-          ]
-        },
         {
           "rule": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
@@ -61,26 +45,10 @@
     },
     {
       "view": "Homepage on phone",
-      "testedRules": 33,
+      "testedRules": 32,
       "passedRules": 31,
-      "needsManualReview": 2,
+      "needsManualReview": 1,
       "incompleteRules": [
-        {
-          "rule": "aria-prohibited-attr",
-          "help": "Elements must only use permitted ARIA attributes",
-          "impact": "serious",
-          "affectedElements": 2,
-          "examples": [
-            {
-              "selector": ".survey-evidence",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            },
-            {
-              "selector": ".survey-figure",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            }
-          ]
-        },
         {
           "rule": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
@@ -118,26 +86,10 @@
     },
     {
       "view": "Authorized individual view",
-      "testedRules": 33,
+      "testedRules": 32,
       "passedRules": 31,
-      "needsManualReview": 2,
+      "needsManualReview": 1,
       "incompleteRules": [
-        {
-          "rule": "aria-prohibited-attr",
-          "help": "Elements must only use permitted ARIA attributes",
-          "impact": "serious",
-          "affectedElements": 2,
-          "examples": [
-            {
-              "selector": ".survey-evidence",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            },
-            {
-              "selector": ".survey-figure",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            }
-          ]
-        },
         {
           "rule": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
@@ -175,26 +127,10 @@
     },
     {
       "view": "Phone navigation expanded",
-      "testedRules": 33,
+      "testedRules": 32,
       "passedRules": 31,
-      "needsManualReview": 2,
+      "needsManualReview": 1,
       "incompleteRules": [
-        {
-          "rule": "aria-prohibited-attr",
-          "help": "Elements must only use permitted ARIA attributes",
-          "impact": "serious",
-          "affectedElements": 2,
-          "examples": [
-            {
-              "selector": ".survey-evidence",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            },
-            {
-              "selector": ".survey-figure",
-              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-            }
-          ]
-        },
         {
           "rule": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
@@ -242,5 +178,6 @@
   "issueCount": 0,
   "ruleCount": 0,
   "criticalRules": 0,
+  "unresolvedAria": 0,
   "keyboardCheck": "PASS: Enter, Space, Tab, focus styling and persistence; team/function/organization scopes"
 }
