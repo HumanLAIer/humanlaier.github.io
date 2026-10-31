@@ -49,7 +49,7 @@
     const xy=positionsMap[n.id],influence=(influences.get(n.id)||0)/maxInf;
     const selected=state.selected===n.id,dimmed=state.selected&&!selected&& !links.some(e=>(e.a===n.id&&e.b===state.selected)||(e.b===n.id&&e.a===state.selected));
     const radius=scope==='individual'?(5.5+(state.measure==='influence'?influence*6:0)):scope==='function'?(29+influence*10):(20+(state.measure==='influence'?influence*14:4));
-    const g=el('g',{class:`network-node ${scope}${selected?' selected':''}${dimmed?' dim':''}`,transform:`translate(${xy.x} ${xy.y})`,role:'button',tabindex:'0','aria-label':`Inspect ${n.name}`},nodeLayer);
+    const g=el('g',{class:`network-node ${scope}${selected?' selected':''}${dimmed?' dim':''}`,transform:`translate(${xy.x} ${xy.y})`,role:'button',tabindex:'0','data-node-id':n.id,'aria-label':`Inspect relationships for ${n.name}`,'aria-pressed':selected?'true':'false'},nodeLayer);
     el('circle',{r:radius+11,class:'halo'},g);
     el('circle',{r:radius,class:'disc'+(scope==='function'?' function-disc':''),stroke:selected?'#e2c044':'#fff','stroke-width':selected?4:2},g);
     if(scope==='team'||scope==='function'){
@@ -57,8 +57,18 @@
       txt(g,scope==='team'?n.name:(M.fnShort[n.id]||n.id),0,radius+23,{class:'caption'});
     }
     el('title',{},g).textContent=n.name;
-    const select=()=>{state.selected=state.selected===n.id?null:n.id;render()};
-    g.addEventListener('click',select);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}});
+    const select=()=>{
+      const wasFocused=document.activeElement===g;
+      state.selected=state.selected===n.id?null:n.id;
+      render();
+      // Redrawing the graph must not strand a keyboard user at the document body.
+      if(wasFocused){
+        const successor=[...app.querySelectorAll('.network-node')].find(el=>el.getAttribute('data-node-id')===n.id);
+        successor?.focus();
+      }
+    };
+    g.addEventListener('click',select);
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}});
  });
  if(scope==='individual')txt(app,'48 FICTIONAL INDIVIDUALS · TOP 125 STRONGEST RELATIONSHIPS SHOWN',32,35,{class:'network-guide'});
  }

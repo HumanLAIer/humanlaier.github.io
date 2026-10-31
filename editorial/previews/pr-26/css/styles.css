@@ -73,3 +73,37 @@
 @media(max-width:980px){.contact-layout{grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:32px}}
 @media(max-width:760px){.contact{padding:76px 0}.contact-layout{grid-template-columns:1fr;gap:30px}.contact-intro-mark{display:none}.contact-form-card{padding:25px}}
 @media(max-width:480px){.contact-fields-two{grid-template-columns:1fr;gap:16px}.contact .contact-field{margin-bottom:16px}.contact-fields-two .contact-field{margin-bottom:0}.contact-form-card{padding:22px}.contact-form-card h3{font-size:28px}.contact-submit{width:100%;display:flex;justify-content:space-between;align-items:center}}
+
+
+/* V1.5 | Accessible visual hierarchy. These accessible secondary inks clear 4.5:1
+   against the site's white, ivory, soft grey and pale teal text surfaces.
+   This section follows responsive rules to prevent 8px labels on phones. */
+.section-index span+span,
+.comp-heading span+span,
+.measure-option small,
+.ctrl-help,
+.canvas-bar small,
+.caption-mini,
+.inspector-metrics span,
+.inspector-legend,
+.ticks,
+.app-disclosure,
+.chart-legend small,
+.scenario-stats span,
+.scenario-stats strong small,
+.vis-foot{color:var(--secondary-ink)}
+.canvas-directive{color:var(--secondary-ink)!important}
+.section-index,.comp-heading{font-size:11px;line-height:1.45}
+.measure-option small,.ctrl-help,.canvas-bar small,.caption-mini,.inspector-metrics span,.inspector-legend,.ticks,.app-disclosure,.chart-legend small,.scenario-stats span,.scenario-stats strong small,.vis-foot{font-size:11px;line-height:1.45}
+.network-node:focus-visible .halo{fill:none;opacity:1;stroke:var(--viridian);stroke-width:5px}
+.network-node:focus-visible .disc{stroke:var(--oxford);stroke-width:3px}
+@media(max-width:480px){
+ .measure-option strong{font-size:12px}
+ .measure-option small,.app-brand small{font-size:11px;line-height:1.45}
+ .section-index{font-size:11px;line-height:1.45}
+ .survey-figure-heading{font-size:11px;line-height:1.4;letter-spacing:.055em}
+ .survey-figure-caption,.survey-series-legend,.survey-bar-legend{font-size:11px;line-height:1.45}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
