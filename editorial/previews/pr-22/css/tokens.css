@@ -1,0 +1,5 @@
+:root{
+ --oxford:#002147;--navy:#061e38;--ivory:#f1eee9;--offwhite:#f2f0f0;--stone:#d9d8d6;--charcoal:#211d1c;--viridian:#15616d;--sky:#b9d6f2;--ochre:#e2c044;--ink:#102c43;--muted:#556875;--line:#d6dcd9;--white:#fff;--neg:#96671b;
+ --sans:'IBM Plex Sans','Segoe UI',Arial,sans-serif;--serif:'Noto Serif',Georgia,'Times New Roman',serif;
+ --space-1:4px;--space-2:8px;--space-3:16px;--space-4:24px;--space-5:32px;--space-6:48px;--space-7:64px;--space-8:96px;
+}
