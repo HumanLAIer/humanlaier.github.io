@@ -120,6 +120,31 @@
       "details": "{\"scope\":\"team\",\"visibility\":\"aggregate\"}"
     },
     {
+      "name": "Relationship selector updates a textual analytical explanation",
+      "passed": true,
+      "details": "Leadership and Planning: interaction volume is +29% against January; estimated sentiment falls by 0.18 points over the six periods."
+    },
+    {
+      "name": "Changing time-series data is tied to a polite live summary",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Structural scenario works by keyboard and updates textual interpretation",
+      "passed": true,
+      "details": "28 surviving-team pairs lose a connection path when the Transformation Office is removed."
+    },
+    {
+      "name": "Structural scenario exposes an accessible live result",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Structural scenario restores via Space and preserves focus",
+      "passed": true,
+      "details": ""
+    },
+    {
       "name": "Required inputs have native empty-value validation",
       "passed": true,
       "details": "[{\"name\":\"name\",\"valueMissing\":true},{\"name\":\"email\",\"valueMissing\":true},{\"name\":\"organization\",\"valueMissing\":true},{\"name\":\"message\",\"valueMissing\":true}]"
@@ -176,7 +201,7 @@
     }
   ],
   "failed": 0,
-  "passed": 33,
+  "passed": 38,
   "desktopAccessibilityTreeSummary": {
     "main": [
       {
