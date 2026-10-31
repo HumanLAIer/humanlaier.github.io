@@ -1,0 +1,525 @@
+{
+  "title": "Human LAIer issue #27 browser-API acceptance evidence",
+  "testedOn": "Local PR build, Chromium/Playwright",
+  "limitations": [
+    "Chrome accessibility-tree inspection does not simulate human NVDA/VoiceOver experience",
+    "390px phone viewport and forced-colors emulation do not substitute for physical-device testing",
+    "Prior 640px and 320px tests are CSS-width reflow proxies, not literal browser 200%/400% zoom",
+    "Screenshots and computed colors cannot settle every inconclusive contrast case"
+  ],
+  "networkSafety": "No external requests permitted; no lead forms submitted",
+  "tests": [
+    {
+      "name": "Built homepage loaded without external resources",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "One visible primary heading",
+      "passed": true,
+      "details": "The human system changes before the numbers do."
+    },
+    {
+      "name": "Skip link is first keyboard stop",
+      "passed": true,
+      "details": "{\"href\":\"#content\",\"text\":\"Skip to content\"}"
+    },
+    {
+      "name": "Skip link activates the main content anchor",
+      "passed": true,
+      "details": "#content"
+    },
+    {
+      "name": "Skip link transfers keyboard focus to main landmark",
+      "passed": true,
+      "details": "{\"tag\":\"MAIN\",\"id\":\"content\"}"
+    },
+    {
+      "name": "Chrome AX tree exposes a named interactive graph group",
+      "passed": true,
+      "details": "Interactive network of fictional organizational relationships"
+    },
+    {
+      "name": "Chrome AX tree exposes twelve individually named team buttons",
+      "passed": true,
+      "details": "12 named buttons"
+    },
+    {
+      "name": "Analysis inspector announces dynamic updates",
+      "passed": true,
+      "details": "polite"
+    },
+    {
+      "name": "Form AX label: Your name",
+      "passed": true,
+      "details": "Your name "
+    },
+    {
+      "name": "Form AX label: Work email",
+      "passed": true,
+      "details": "Work email "
+    },
+    {
+      "name": "Form AX label: Organization",
+      "passed": true,
+      "details": "Organization "
+    },
+    {
+      "name": "Form AX label: What would you like to discuss",
+      "passed": true,
+      "details": "What would you like to discuss? "
+    },
+    {
+      "name": "Bot-trap checkbox is absent from AX tree",
+      "passed": true,
+      "details": "The hidden honeypot must not be spoken"
+    },
+    {
+      "name": "Enter selects graph node, updates text and preserves keyboard focus",
+      "passed": true,
+      "details": "{\"focused\":true,\"pressed\":\"true\",\"title\":\"Strategy\",\"selected\":\"S\",\"ring\":\"rgb(21, 97, 109)\"}"
+    },
+    {
+      "name": "Selected graph button is exposed as pressed in AX tree",
+      "passed": true,
+      "details": "Inspect relationships for Strategy"
+    },
+    {
+      "name": "Space clears node without losing focus",
+      "passed": true,
+      "details": "{\"focused\":true,\"pressed\":\"false\",\"selected\":null}"
+    },
+    {
+      "name": "Analysis scope function preserves focus and correct graph count",
+      "passed": true,
+      "details": "6 nodes; focus scope-select"
+    },
+    {
+      "name": "Analysis scope team preserves focus and correct graph count",
+      "passed": true,
+      "details": "12 nodes; focus scope-select"
+    },
+    {
+      "name": "Analysis scope organization preserves focus and correct graph count",
+      "passed": true,
+      "details": "0 nodes; focus scope-select"
+    },
+    {
+      "name": "Organization overview disables inapplicable node picker",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Authorized individual scope exposes 48 accessible nodes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Returning to aggregate visibility leaves individual detail",
+      "passed": true,
+      "details": "{\"scope\":\"team\",\"visibility\":\"aggregate\"}"
+    },
+    {
+      "name": "Relationship selector updates a textual analytical explanation",
+      "passed": true,
+      "details": "Leadership and Planning: interaction volume is +29% against January; estimated sentiment falls by 0.18 points over the six periods."
+    },
+    {
+      "name": "Changing time-series data is tied to a polite live summary",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Structural scenario works by keyboard and updates textual interpretation",
+      "passed": true,
+      "details": "28 surviving-team pairs lose a connection path when the Transformation Office is removed."
+    },
+    {
+      "name": "Structural scenario exposes an accessible live result",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Structural scenario restores via Space and preserves focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Required inputs have native empty-value validation",
+      "passed": true,
+      "details": "[{\"name\":\"name\",\"valueMissing\":true},{\"name\":\"email\",\"valueMissing\":true},{\"name\":\"organization\",\"valueMissing\":true},{\"name\":\"message\",\"valueMissing\":true}]"
+    },
+    {
+      "name": "Form keyboard order moves from name to work email",
+      "passed": true,
+      "details": "inquiry-email"
+    },
+    {
+      "name": "Phone-sized homepage loaded without external requests",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Phone menu opens from keyboard",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Tab after open menu reaches first navigation link",
+      "passed": true,
+      "details": "#surveys"
+    },
+    {
+      "name": "Mobile demonstration shortcut has usable touch target",
+      "passed": true,
+      "details": "{\"x\":24,\"y\":288.546875,\"width\":212.03125,\"height\":44.109375}"
+    },
+    {
+      "name": "Mobile demonstration link navigates and closes menu",
+      "passed": true,
+      "details": "{\"expanded\":\"false\",\"hash\":\"#contact\",\"navHidden\":true,\"focusInsideHiddenNavigation\":false,\"focusElement\":\"SECTION contact\",\"focusAtContact\":true,\"menuLabel\":\"Open menu\"}"
+    },
+    {
+      "name": "Closing mobile menu does not strand focus on hidden link",
+      "passed": true,
+      "details": "{\"expanded\":\"false\",\"hash\":\"#contact\",\"navHidden\":true,\"focusInsideHiddenNavigation\":false,\"focusElement\":\"SECTION contact\",\"focusAtContact\":true,\"menuLabel\":\"Open menu\"}"
+    },
+    {
+      "name": "Mobile navigation transfers focus to destination section",
+      "passed": true,
+      "details": "{\"expanded\":\"false\",\"hash\":\"#contact\",\"navHidden\":true,\"focusInsideHiddenNavigation\":false,\"focusElement\":\"SECTION contact\",\"focusAtContact\":true,\"menuLabel\":\"Open menu\"}"
+    },
+    {
+      "name": "Collapsed mobile menu announces correct action",
+      "passed": true,
+      "details": "Open menu"
+    },
+    {
+      "name": "Reduced motion and forced colors remain operable in Chromium",
+      "passed": true,
+      "details": "{\"reduced\":true,\"forced\":true,\"scroll\":\"auto\"}"
+    }
+  ],
+  "failed": 0,
+  "passed": 38,
+  "desktopAccessibilityTreeSummary": {
+    "main": [
+      {
+        "name": "",
+        "properties": [
+          {
+            "name": "focused",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "navigation": [
+      {
+        "name": "Main navigation",
+        "properties": []
+      },
+      {
+        "name": "Footer navigation",
+        "properties": []
+      }
+    ],
+    "group": [
+      {
+        "name": "Department of Defense 2024 DEOCS response rate",
+        "properties": []
+      },
+      {
+        "name": "Comparison of a periodic survey snapshot and ongoing communication signals from synthetic data",
+        "properties": []
+      },
+      {
+        "name": "Interactive network of fictional organizational relationships",
+        "properties": []
+      },
+      {
+        "name": "Choose an analytical measure",
+        "properties": []
+      }
+    ],
+    "button": [
+      {
+        "name": "Remove liaison team ↗",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Explore visibility in the platform ↑",
+        "properties": []
+      },
+      {
+        "name": "Send inquiry ",
+        "properties": []
+      },
+      {
+        "name": "↶   Reset analysis",
+        "properties": []
+      },
+      {
+        "name": "Inspect relationships for Strategy",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Transformation Office",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Field Operations",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Service Delivery",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Platforms",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Data Systems",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Planning",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Finance",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for People Services",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Learning",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Partnerships",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "Inspect relationships for Regional Liaison",
+        "properties": [
+          {
+            "name": "pressed",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "heading": [
+      {
+        "name": "Think back to the last organizational survey you completed.",
+        "properties": []
+      },
+      {
+        "name": "An organization is more than its organizational chart.",
+        "properties": []
+      },
+      {
+        "name": "Understanding how organizations behave.",
+        "properties": []
+      },
+      {
+        "name": "The value of knowing what is normal.",
+        "properties": []
+      },
+      {
+        "name": "From understanding to action.",
+        "properties": []
+      },
+      {
+        "name": "Understand the present organization.",
+        "properties": []
+      },
+      {
+        "name": "Explore possible futures.",
+        "properties": []
+      },
+      {
+        "name": "Make decisions and learn.",
+        "properties": []
+      },
+      {
+        "name": "What happens when an important connection is lost?",
+        "properties": []
+      },
+      {
+        "name": "A common analytical foundation. Different purposes.",
+        "properties": []
+      },
+      {
+        "name": "Our privacy policy matches yours.",
+        "properties": []
+      },
+      {
+        "name": "An enduring question, new means of inquiry.",
+        "properties": []
+      },
+      {
+        "name": "See your organization more clearly.",
+        "properties": []
+      },
+      {
+        "name": "Tell us what you're working on.",
+        "properties": []
+      },
+      {
+        "name": "The human system changes before the numbers do.",
+        "properties": []
+      },
+      {
+        "name": "What happens between survey periods?",
+        "properties": []
+      },
+      {
+        "name": "Organizational transformation",
+        "properties": []
+      },
+      {
+        "name": "Mergers and integration",
+        "properties": []
+      },
+      {
+        "name": "Government and defense",
+        "properties": []
+      },
+      {
+        "name": "Financial services and insider risk",
+        "properties": []
+      },
+      {
+        "name": "Interaction frequency",
+        "properties": []
+      }
+    ],
+    "textbox": [
+      {
+        "name": "Your name ",
+        "properties": []
+      },
+      {
+        "name": "Work email ",
+        "properties": []
+      },
+      {
+        "name": "Organization ",
+        "properties": []
+      },
+      {
+        "name": "Your role (optional)",
+        "properties": []
+      },
+      {
+        "name": "What would you like to discuss? ",
+        "properties": []
+      }
+    ],
+    "combobox": [
+      {
+        "name": "EXAMINE A RELATIONSHIP",
+        "properties": []
+      },
+      {
+        "name": "Workforce size",
+        "properties": []
+      },
+      {
+        "name": "What brings you here?",
+        "properties": []
+      },
+      {
+        "name": "02 / LEVEL OF ANALYSIS",
+        "properties": []
+      },
+      {
+        "name": "03 / SUBJECT",
+        "properties": []
+      },
+      {
+        "name": "04 / VISIBILITY",
+        "properties": []
+      }
+    ]
+  },
+  "phoneAccessibilityTreeSummary": {
+    "navigation": [
+      {
+        "name": "Footer navigation",
+        "properties": []
+      }
+    ],
+    "menu": [
+      {
+        "name": "Toggle menu",
+        "properties": []
+      }
+    ]
+  }
+}
