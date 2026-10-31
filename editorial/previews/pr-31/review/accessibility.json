@@ -1,0 +1,45 @@
+{
+  "tool": "axe-core",
+  "scope": "Automated WCAG 2.2 A/AA tagged rules; manual testing still required",
+  "cases": [
+    {
+      "view": "Homepage on desktop",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "violations": []
+    },
+    {
+      "view": "Homepage on phone",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "violations": []
+    },
+    {
+      "view": "Authorized individual view",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "violations": []
+    },
+    {
+      "view": "Phone navigation expanded",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "violations": []
+    },
+    {
+      "view": "Confirmation page on desktop",
+      "testedRules": 19,
+      "passedRules": 19,
+      "needsManualReview": 0,
+      "violations": []
+    }
+  ],
+  "issueCount": 0,
+  "ruleCount": 0,
+  "criticalRules": 0,
+  "keyboardCheck": "PASS: Enter, Space, Tab, focus styling and persistence; team/function/organization scopes"
+}
