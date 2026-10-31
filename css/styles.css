@@ -107,3 +107,12 @@
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
+
+/* Four analytical measure choices need two readable columns at 320px / 400%-zoom equivalent. */
+@media(max-width:360px){
+ .measure-field,.measure-stack{min-width:0}
+ .measure-stack{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .measure-option{min-width:0;padding:10px 8px}
+ .measure-option strong{font-size:12px}
+ .measure-option small{font-size:11px}
+}
