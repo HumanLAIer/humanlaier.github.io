@@ -1,0 +1,246 @@
+{
+  "tool": "axe-core",
+  "scope": "Automated WCAG 2.2 A/AA tagged rules; manual testing still required",
+  "cases": [
+    {
+      "view": "Homepage on desktop",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "incompleteRules": [
+        {
+          "rule": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "impact": "serious",
+          "affectedElements": 2,
+          "examples": [
+            {
+              "selector": ".survey-evidence",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            },
+            {
+              "selector": ".survey-figure",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "rule": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "impact": "serious",
+          "affectedElements": 104,
+          "examples": [
+            {
+              "selector": ".muted",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": ".link-light > span[aria-hidden=\"true\"]",
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "selector": ".figure-top > span:nth-child(1)",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": ".fig-signal",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": "text[x=\"20\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": "text[x=\"210\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "view": "Homepage on phone",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "incompleteRules": [
+        {
+          "rule": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "impact": "serious",
+          "affectedElements": 2,
+          "examples": [
+            {
+              "selector": ".survey-evidence",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            },
+            {
+              "selector": ".survey-figure",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "rule": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "impact": "serious",
+          "affectedElements": 93,
+          "examples": [
+            {
+              "selector": ".link-light > span[aria-hidden=\"true\"]",
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "selector": "text[y=\"31\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "selector": "text[x=\"210\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "selector": "text[y=\"24\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "selector": "text[x=\"48\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "selector": "text[y=\"114\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "view": "Authorized individual view",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "incompleteRules": [
+        {
+          "rule": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "impact": "serious",
+          "affectedElements": 2,
+          "examples": [
+            {
+              "selector": ".survey-evidence",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            },
+            {
+              "selector": ".survey-figure",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "rule": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "impact": "serious",
+          "affectedElements": 75,
+          "examples": [
+            {
+              "selector": ".muted",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": ".link-light > span[aria-hidden=\"true\"]",
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "selector": ".figure-top > span:nth-child(1)",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": ".fig-signal",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": "text[x=\"20\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "selector": "text[x=\"210\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "view": "Phone navigation expanded",
+      "testedRules": 33,
+      "passedRules": 31,
+      "needsManualReview": 2,
+      "incompleteRules": [
+        {
+          "rule": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "impact": "serious",
+          "affectedElements": 2,
+          "examples": [
+            {
+              "selector": ".survey-evidence",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            },
+            {
+              "selector": ".survey-figure",
+              "reason": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "rule": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "impact": "serious",
+          "affectedElements": 97,
+          "examples": [
+            {
+              "selector": ".hero-copy > .eyebrow.on-dark",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "selector": ".muted",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "selector": "h1",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "selector": "h1 > em",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "selector": ".link-light > span[aria-hidden=\"true\"]",
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "selector": "text[y=\"31\"]",
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "view": "Confirmation page on desktop",
+      "testedRules": 19,
+      "passedRules": 19,
+      "needsManualReview": 0,
+      "incompleteRules": [],
+      "violations": []
+    }
+  ],
+  "issueCount": 0,
+  "ruleCount": 0,
+  "criticalRules": 0,
+  "keyboardCheck": "PASS: Enter, Space, Tab, focus styling and persistence; team/function/organization scopes"
+}
