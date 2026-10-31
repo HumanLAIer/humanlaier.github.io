@@ -1,0 +1,283 @@
+{
+  "method": "CSS-viewport reflow proxy and keyboard/media automation",
+  "limitations": "Not actual zoom, screen reader or physical device testing",
+  "cases": [
+    {
+      "scenario": "Phone baseline",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "diagnostics": {
+        "width": 390,
+        "documentExtent": 390,
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "controls": [
+          {
+            "selector": "#menu-button",
+            "visible": true,
+            "left": 317,
+            "right": 372,
+            "width": 55,
+            "clipped": false
+          },
+          {
+            "selector": "#scope-select",
+            "visible": true,
+            "left": 36,
+            "right": 188,
+            "width": 152,
+            "clipped": false
+          },
+          {
+            "selector": "#visibility-select",
+            "visible": true,
+            "left": 36,
+            "right": 188,
+            "width": 152,
+            "clipped": false
+          },
+          {
+            "selector": "#node-select",
+            "visible": true,
+            "left": 288,
+            "right": 359,
+            "width": 71,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-name",
+            "visible": true,
+            "left": 40,
+            "right": 350,
+            "width": 310,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-email",
+            "visible": true,
+            "left": 40,
+            "right": 350,
+            "width": 310,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-message",
+            "visible": true,
+            "left": 40,
+            "right": 350,
+            "width": 310,
+            "clipped": false
+          },
+          {
+            "selector": ".contact-submit",
+            "visible": true,
+            "left": 40,
+            "right": 350,
+            "width": 310,
+            "clipped": false
+          }
+        ],
+        "graphNodeCount": 12
+      },
+      "menuExpanded": "true",
+      "nextFocus": "#surveys",
+      "reducedMotion": {
+        "matched": true,
+        "scrollBehavior": "auto"
+      },
+      "forcedColors": {
+        "matched": true,
+        "graphLabel": "Interactive network of fictional organizational relationships",
+        "selectedNodeCount": 1
+      },
+      "faults": []
+    },
+    {
+      "scenario": "1280px browser at 200%: CSS-width proxy",
+      "viewport": {
+        "width": 640,
+        "height": 900
+      },
+      "diagnostics": {
+        "width": 640,
+        "documentExtent": 640,
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "controls": [
+          {
+            "selector": "#menu-button",
+            "visible": true,
+            "left": 567,
+            "right": 622,
+            "width": 55,
+            "clipped": false
+          },
+          {
+            "selector": "#scope-select",
+            "visible": true,
+            "left": 36,
+            "right": 313,
+            "width": 277,
+            "clipped": false
+          },
+          {
+            "selector": "#visibility-select",
+            "visible": true,
+            "left": 36,
+            "right": 313,
+            "width": 277,
+            "clipped": false
+          },
+          {
+            "selector": "#node-select",
+            "visible": true,
+            "left": 444,
+            "right": 604,
+            "width": 160,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-name",
+            "visible": true,
+            "left": 43,
+            "right": 312,
+            "width": 269,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-email",
+            "visible": true,
+            "left": 328,
+            "right": 597,
+            "width": 269,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-message",
+            "visible": true,
+            "left": 43,
+            "right": 597,
+            "width": 554,
+            "clipped": false
+          },
+          {
+            "selector": ".contact-submit",
+            "visible": true,
+            "left": 43,
+            "right": 204,
+            "width": 161,
+            "clipped": false
+          }
+        ],
+        "graphNodeCount": 12
+      },
+      "menuExpanded": "true",
+      "nextFocus": "#surveys",
+      "reducedMotion": {
+        "matched": true,
+        "scrollBehavior": "auto"
+      },
+      "forcedColors": {
+        "matched": true,
+        "graphLabel": "Interactive network of fictional organizational relationships",
+        "selectedNodeCount": 1
+      },
+      "faults": []
+    },
+    {
+      "scenario": "1280px browser at 400%: CSS-width proxy",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "diagnostics": {
+        "width": 320,
+        "documentExtent": 320,
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "controls": [
+          {
+            "selector": "#menu-button",
+            "visible": true,
+            "left": 247,
+            "right": 302,
+            "width": 55,
+            "clipped": false
+          },
+          {
+            "selector": "#scope-select",
+            "visible": true,
+            "left": 36,
+            "right": 153,
+            "width": 117,
+            "clipped": false
+          },
+          {
+            "selector": "#visibility-select",
+            "visible": true,
+            "left": 36,
+            "right": 153,
+            "width": 117,
+            "clipped": false
+          },
+          {
+            "selector": "#node-select",
+            "visible": true,
+            "left": 74,
+            "right": 234,
+            "width": 160,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-name",
+            "visible": true,
+            "left": 40,
+            "right": 280,
+            "width": 240,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-email",
+            "visible": true,
+            "left": 40,
+            "right": 280,
+            "width": 240,
+            "clipped": false
+          },
+          {
+            "selector": "#inquiry-message",
+            "visible": true,
+            "left": 40,
+            "right": 280,
+            "width": 240,
+            "clipped": false
+          },
+          {
+            "selector": ".contact-submit",
+            "visible": true,
+            "left": 40,
+            "right": 280,
+            "width": 240,
+            "clipped": false
+          }
+        ],
+        "graphNodeCount": 12
+      },
+      "menuExpanded": "true",
+      "nextFocus": "#surveys",
+      "reducedMotion": {
+        "matched": true,
+        "scrollBehavior": "auto"
+      },
+      "forcedColors": {
+        "matched": true,
+        "graphLabel": "Interactive network of fictional organizational relationships",
+        "selectedNodeCount": 1
+      },
+      "faults": []
+    }
+  ],
+  "issueCount": 0
+}
